@@ -32,7 +32,18 @@
 <body>
    <div class="container">
     <img src="water-bottle.png" class="bottle" id="bottle">
-    <button class="btn" id="toggle" onclick="water-bottle()">toggle</button>
+    <button class="btn"  onclick="toggle()">toggle</button>
    </div>
+   <script>
+    const bottleElement= document.getElementById("bottle");
+    function toggle (){
+       if (bottleElement.src.includes("water-bottle.png")){
+        bottleElement.src="empty-bottle.png";
+       } 
+       else{
+        bottleElement.src="water-bottle.png";
+       }
+    }
+   </script>
 </body>
 </html>
